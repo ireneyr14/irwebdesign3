@@ -1,0 +1,180 @@
+@charset "UTF-8";
+/* CSS Document */
+
+	
+	/* NAV */
+
+.bg-light {
+    background-color: #32757e!important;
+}
+		
+.navbar-light .navbar-toggler {
+	border-color: #fefefe;
+}
+
+	.navbar-toggler:focus, .navbar-toggler:hover {
+    text-decoration: none;
+    background-color: white;
+}
+	
+	.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fefefe;
+	}
+ 
+	.navbar-light .navbar-nav .nav-link:focus {
+    color: #d37977;
+    outline: 0;
+	}
+	
+.navbar-light .navbar-brand {
+	color: #fefefe;
+	font-family: 'Baloo Chettan 2';
+	font-size: 2.5rem;
+}
+ 
+	.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+	color: #fefefe;
+	font-family: 'Roboto';
+	font-weight: 600;
+	}
+ 
+	
+		/* JUMBOTRON */
+
+
+    .jumbotron {
+      background-size: cover;
+      background-position:center;
+	  padding-top: 20%;
+  	padding-bottom: 20%;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+	  
+    }
+
+
+	.jum-head{
+		font-family: 'Baloo Chettan 2';
+		font-weight: 600;
+		font-size: 4rem;
+		color: #3b5781;
+		text-align: center;
+	}
+
+
+	hr.style-one {
+	border: 0;
+	height: 3px;
+	background: #d37977;
+    background-image: -webkit-linear-gradient(left, #ccc, #d37977, #ccc);
+    background-image: -moz-linear-gradient(left, #ccc, #d37977, #ccc);
+    background-image: -ms-linear-gradient(left, #ccc, #d37977, #ccc);
+    background-image: -o-linear-gradient(left, #ccc, #d37977, #ccc);
+}
+
+
+
+		.font-color{
+		font-family: 'Roboto';
+		color: #3b5781;
+		border-bottom-width: thin;
+		text-align: center;
+	}
+
+
+	/* CARDS */
+	
+
+	.card-deck span {
+	 display: none;
+	border-radius: 2px;	
+
+	}
+
+	.card-header {
+	 background-color:#174777;
+    font-family: 'Baloo Chettan 2';
+	color:#fefefe;
+	font-size:1.33rem;
+
+
+	} 
+
+	.card:hover{
+  transform:scale(1.01);
+  box-shadow:10px 10px 10px #53b3ba;
+}
+
+	.card-text:last-child {
+    margin-bottom: 0;
+    font-family: 'roboto';
+    font-size: 1.25rem;
+    color: #32757e;
+}
+
+	/* Paragraph */
+
+.header-1{
+	font-family:"Baloo Chettan 2";
+	font-weight: 600;
+	color:#3b5781;
+	
+}
+
+.header-3{
+	font-family:"Baloo Chettan 2";
+	font-weight: 400;
+	color:#3b5781
+	
+}
+
+.all-paragraphs{
+	background-color: #32757e;
+    color: whitesmoke;
+    padding-top: 5px;
+}
+.paragraph-content{
+	font-family: "roboto";
+	font-size: 1.05rem;
+}
+
+.col-12{
+	padding-bottom: 15px;
+}
+
+.lead {
+	font-family: "roboto";
+	
+}
+	
+.row{
+	    margin-top: 25px;
+
+}
+
+	
+    /* Number of Cards by Row based on Viewport */
+
+    @media (min-width: 576px) {
+        .card-deck .card {
+            min-width: 50.1%; /* 1 Column */
+            margin-bottom: 12px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .card-deck .card {
+            min-width: 33.4%;  /* 2 Columns */
+        }
+    }
+
+
+    @media (min-width: 1200px) {
+        .card-deck .card {
+            min-width: 20.1%;  /* 4 Columns */
+        }
+    }
+	
