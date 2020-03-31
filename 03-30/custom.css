@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+* ===============
+* NAV
+* ===============
+*/
+
+.bg-light {
+    background-color: #FCECEC!important;
+}
+		
+.navbar-light .navbar-toggler {
+	border-color: #AC4B4C;
+}
+
+	.navbar-toggler:focus, .navbar-toggler:hover {
+    text-decoration: none;
+    background-color: white;
+}
+	
+	.navbar-dark .navbar-nav .nav-link:hover {
+    color: #AC4B4C;
+	}
+ 
+	.navbar-light .navbar-nav .nav-link:focus {
+    color: #d37977;
+    outline: 0;
+	}
+	
+.navbar-light .navbar-brand {
+	color: #903F3F;
+	font-family: 'Sen';
+	font-size: 2.5rem;
+	
+}
+ 
+	.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+	color: #AC4B4C;
+	font-family: 'Roboto';
+	font-weight: 600;
+	}
+
+
+
+
+
+/*
+*
+* ==========================================
+* check out
+* ==========================================
+*
+*/
+
+body {
+  background: #eecda3;
+  background: -webkit-linear-gradient(to right, #eecda3, #9198e5);
+  background: linear-gradient(to right, #e66465, #ef629f);
+  min-height: 100vh;
+}
+
+
+/*
+* =============================
+* Font styles check out
+* =============================
+*/
+
+.display-4{
+	font-family: 'Sen';
+	font-weight: 400;
+	
+}
+
+.text-dark{
+	font-family: 'Roboto';
+}
+
+.border-0{
+	font-family: 'Roboto';
+}
+
+.text-muted{
+	font-family: 'Roboto';
+}
+
+.align-middle{
+	font-family: 'Roboto';
+}
+
+.d-flex{
+	font-family: 'Roboto';
+	font-weight: bold;
+}
+
+.font-weight-bold{
+	font-family: 'Roboto';
+}
+
+.text-uppercase{
+	color:#903F3F;
+}
+
+.btn{
+	font-family: 'Roboto';
+	font-weight: bold;
+	background-color: #6465E6;
+	color:#FCECEC;
+}
+
+p.mb-1{
+	color:white;
+}
