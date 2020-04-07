@@ -1,0 +1,409 @@
+body {
+    background-color: #FFFAFA;
+}
+
+/* NAV styles*/
+.bg-light {
+    background-color: #34558B !important;
+}
+
+.navbar-light .navbar-brand {
+    color: aquamarine;
+    font-family: 'Space Mono';
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #fefefe;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+    text-decoration: none;
+    background-color: #FA7268;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #FCA7A1;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #FEEDEC;
+}
+
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #FA7268;
+    outline: 0;
+}
+
+.navbar-light .navbar-brand {
+    color: #fefefe;
+    font-family: 'Karla';
+}
+
+.navbar-light .navbar-brand {
+    color: #FFFAFA;
+    font-family: 'Space Mono';
+    font-size: 2.5rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 400;
+    font-size: 1.45rem;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #FA7268;
+}
+
+.navbar-nav {
+    font-family: 'karla';
+}
+
+.navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    line-height: 2.25;
+    font-size: 9rem;
+    /* height: auto; */
+    z-index: 40;
+    -webkit-box-align: center;
+    /* display: flex; */
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+}
+
+.navbar-toggler span {
+    display: block;
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    position: relative;
+    right: 0;
+    opacity: 1;
+}
+
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+    -webkit-transition: transform .35s ease-in-out;
+    -moz-transition: transform .35s ease-in-out;
+    -o-transition: transform .35s ease-in-out;
+    transition: transform .35s ease-in-out;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    position: absolute;
+    right: 29px;
+    top: 23px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    opacity: 0.9;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    height: 4vh;
+    visibility: hidden;
+    background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    position: absolute;
+    right: 29px;
+    top: 23px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    opacity: 0.9;
+}
+
+/* Jumbotron styles*/
+
+.jumbotron {
+    background-size: cover;
+    background-position: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
+
+}
+
+
+.jum-head {
+    font-family: 'space mono';
+    font-weight: 700;
+    color: #FFFAFA;
+    font-size: 5vw;
+}
+
+
+hr.style-one {
+    border: 0;
+    height: 3px;
+    background: #d37977;
+    background-image: -webkit-linear-gradient(left, #ccc, #d37977, #ccc);
+    background-image: -moz-linear-gradient(left, #ccc, #d37977, #ccc);
+    background-image: -ms-linear-gradient(left, #ccc, #d37977, #ccc);
+    background-image: -o-linear-gradient(left, #ccc, #d37977, #ccc);
+}
+
+.font-color {
+    font-family: 'Karla';
+    font-size: 2.5vw;
+    color: #FFFAFA;
+    background-color: #34558B;
+    border-radius: 1rem;
+}
+
+
+.display-2 {
+    font-size: 5.95vh;
+    font-weight: 300;
+    line-height: 1.2;
+    font-family: 'Space Mono';
+    font-weight: 700;
+    color: #34558B;
+}
+
+/* CARDS */
+
+
+.card-deck span {
+    display: none;
+    border-radius: 2px;
+
+}
+
+.card-header {
+    background-color: #174777;
+    font-family: 'Karla';
+    color: #fefefe;
+    font-size: 1.33rem;
+    font-weight: 700;
+
+
+}
+
+h5.card-title {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    font-family: 'Space Mono';
+    font-weight: 400;
+    color: #34558B
+}
+
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 10px 10px 10px #34558B
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+    font-family: 'karla';
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: black;
+}
+
+/* Paragraph */
+
+.header-1 {
+    font-family: "Karla";
+    font-weight: 700;
+    color: black;
+
+}
+
+.header-3 {
+    font-family: "Space Mono";
+    font-weight: 400;
+    color: #3b5781
+}
+
+.all-paragraphs {
+    background-color: #34558B;
+    color: whitesmoke;
+    padding-top: 5px;
+}
+
+.paragraph-content {
+    font-family: "Karla";
+    font-size: 1.05rem;
+}
+
+.col-12 {
+    padding-bottom: 15px;
+}
+
+.lead {
+    font-family: "karla";
+    font-size: 3vh;
+    font-weight: 300;
+
+}
+
+.row {
+    margin-top: 25px;
+
+}
+
+
+/* Number of Cards by Row based on Viewport */
+
+@media (min-width: 576px) {
+    .card-deck .card {
+        min-width: 50.1%;
+        /* 1 Column */
+        margin-bottom: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-deck .card {
+        min-width: 33.4%;
+        /* 2 Columns */
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .card-deck .card {
+        min-width: 20.1%;
+        /* 4 Columns */
+    }
+}
+
+/* featurettes*/
+
+i.fas.fa-comments {
+    color: #34558B;
+    display: block;
+    font-size: 7.5rem;
+    text-align: center;
+    padding: 2vmax;
+
+}
+
+i.fas.fa-comments:hover {
+    color: #FA7268;
+
+}
+
+i.fas.fa-microphone {
+    color: #34558B;
+    display: block;
+    font-size: 7.5rem;
+    text-align: center;
+    padding: 9vmax;
+
+
+}
+
+i.fas.fa-microphone:hover {
+
+    color: #FA7268;
+}
+
+i.fab.fa-connectdevelop {
+    color: #34558B;
+    display: block;
+    font-size: 7.5rem;
+    text-align: center;
+    padding: 9vmax;
+}
+
+i.fab.fa-connectdevelop:hover {
+    color: #FA7268;
+
+}
+
+h2.featurette-heading {
+    font-family: 'Space Mono';
+    font-size: 4vh;
+    line-height: 4.5vh;
+    color: #34558B;
+
+}
+
+span.text-muted {
+    font-family: 'karla';
+    font-weight: 400;
+}
+
+p.lead {
+    font-family: 'karla';
+}
+
+/*footer*/
+
+footer.page-footer {
+    background-color: #FA7268;
+}
+
+button.btn.btn-sm {
+    background-color: #34558B;
+    font-family: 'karla';
+    font-weight: 700;
+    color: #FFFAFA;
+}
+
+h5.heading-footer {
+    font-family: "Karla";
+    font-weight: 700;
+    color: #FFFAFA;
+    text-transform: uppercase;
+}
+
+p.newsletter-copy {
+    font-family: 'karla';
+    color: #FFFAFA;
+}
+
+h5.logo {
+    font-family: 'Space Mono';
+    font-size: 2.5rem;
+    color: #FFFAFA;
+}
+
+.footer-copyright {
+    color: #FFFAFA;
+}
+
+.fas.fa-envelope:hover {
+    color: #34558B;
+}
+
+.fab.fa-linkedin-in:hover {
+    color: #34558B;
+}
+
+.fab.fa-twitter:hover {
+    color: #34558B;
+}
