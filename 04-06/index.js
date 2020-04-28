@@ -1,28 +1,19 @@
-$(document).ready(function () {
-	//we write everything here
+$('#carouselControl').click(function () {
 
-	$('#myCarousel').carousel({
-		interval: 330
-	});
+	if ($('#carouselControl').hasClass('paused')) {
+		$('#myCarousel').carousel('cycle');
+		$('#carouselControl').text('Pause');
+	} else {
+		$('#myCarousel').carousel('pause');
+		$('#carouselControl').text('Play');
+	}
 
-	$('#carouselControl').click(function () {
-
-		if ($('#carouselControl').hasClass('paused')) {
-			$('#myCarousel').carousel('cycle');
-			$('#carouselControl').text('Pause');
-		} else {
-			$('#myCarousel').carousel('pause');
-			$('#carouselControl').text('Play');
-		}
-
-		$('#carouselControl').toggleClass('paused');
-	});
+	$('#carouselControl').toggleClass('paused');
+});
 
 
-	$('#modalLauncher').click(function () {
-		$('#exampleModal').modal({
-			backdrop: false
-		});
-	});
-});©
-2020 GitHub, Inc.
+
+
+$('#myCarousel').carousel({
+	interval: 3000,
+})
