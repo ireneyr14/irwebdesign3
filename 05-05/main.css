@@ -1,0 +1,137 @@
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=- STYLES DESIGNED AND BUILT BY IRENE RIVERA -=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+body {
+    background-color: rgba(255, 227, 115, 0.3);
+}
+
+/* Nav */
+.bg-light {
+    background-color: #ffe373;
+    background-image: linear-gradient(#ff5c5c 10%, #f1a179 70%, #FFE373);
+    background-size: 130% 130%;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+li.nav-item {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 4vh;
+}
+
+
+.my-logo {
+    display: inline-block;
+    font-family: 'Yanone Kaffeesatz';
+    font-size: 3.5vh;
+    text-align: center;
+    line-height: 3.25vh;
+
+}
+
+.my-logo:hover {
+    transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -webkit-transform: rotate(25deg);
+}
+
+.logo-2 {
+    display: inline-block;
+    font-family: 'Yanone Kaffeesatz';
+    font-size: 2.5vh;
+
+}
+
+.logo-2:hover {
+    transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+}
+
+.logo-sq{
+    border:2.35px solid white;
+    margin: 0.5vw;
+    padding: 0.75vw 1.5vw;
+}
+
+.logo-sq:hover{
+    transform: translateX(20px)
+    -ms-transform:translateX(20px);
+    -webkit-transform:translateX(20px);
+}
+
+/*underline hover*/
+
+li>a:after {
+    content: '';
+    display: block;
+    height: 2.5px;
+    background: white;
+    transform: scaleX(0);
+    transition: transform .3s;
+
+}
+
+li>a:hover:after {
+    transform: scaleX(1);
+    transition: transform .3s;
+}
+
+.active {
+    color: #ff5c5c !important;
+}
+
+
+
+
+/* Photo Gallery*/
+
+h1.font-weight-light.text-center.text-lg-center.mt-4.mb-0 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+
+}
+
+h1.font-weight-light {
+    font-weight: 400 !important;
+}
+
+hr.style-1 {
+    border: 0;
+    height: 3px;
+    background: #ff5c5c;
+    background-image: -webkit-linear-gradient(left, #ccc, #ff5c5c, #ccc);
+    background-image: -moz-linear-gradient(left, #ccc, #ff5c5c, #ccc);
+    background-image: -ms-linear-gradient(left, #ccc, #ff5c5c, #ccc);
+    background-image: -o-linear-gradient(left, #ccc, #ff5c5c, #ccc);
+}
+
+
+/* transitions and transformation*/
+
+
+/* translate up*/
+img.img-fluid.img-thumbnail:hover {
+    transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    box-shadow: 10px 10px 20px 0px #ff5c5c;
+    -moz-box-shadow: 10px 10px 20px 0px#ff5c5c;
+    -webkit-box-shadow: 10px 10px 20px 0px#ff5c5c;
+}
+
+/* translate down*/
+
+img.img-fluid.img-thumbnail.b:hover {
+    transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    box-shadow: 10px 10px 20px 0px #ff5c5c;
+    -moz-box-shadow: 10px 10px 20px 0px#ff5c5c;
+    -webkit-box-shadow: 10px 10px 20px 0px#ff5c5c;
+}
