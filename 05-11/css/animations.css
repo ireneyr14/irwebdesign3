@@ -244,9 +244,9 @@
     transform: translateY(0px);
     animation-iteration-count: 6;
     position: absolute;
-    margin: 0;
+    margin: 7vw;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
-    animation-delay: 3.8s;
 }
 
 
@@ -255,14 +255,13 @@
     width: 200px;
     height: 200px;
     border-radius: 100%;
-    background: #75819894;
-    opacity: 1;
-    animation: bounceSlow 4s;
+    background:hsl(219, 23%, 53%,0.3);
+    animation: bounceSlow2 3.5s;
     transform: translateY(0px);
     animation-iteration-count: 6;
     position: absolute;
-    margin: 4vw;
-    animation-delay: 3s;
+    margin: 7vw;
+    animation-delay:1s;
     animation-fill-mode: forwards;
 }
 
@@ -273,10 +272,48 @@
     from {
         opacity: 0;
         margin-top: 9vh;
+        margin-left: 1vw;
     }
 
     to {
         opacity: 1;
         margin-top: 25vh;
+        margin-left: 15vw;
     }
 }
+
+@keyframes bounceSlow2 {
+    from {
+        opacity: 2;
+        margin-top: 25vh;
+        margin-left: 1vw;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 9vh;
+        margin-left: 15vw;
+    }
+}
+
+/*strip Animation*/
+
+.stripr{
+    position: absolute;
+      width: 90vw;
+      height: 20vh;
+    }
+
+    .stripr {
+        bottom: -92%;
+        animation-duration: 4s;
+        background-color: hsl(219, 23%, 53%);
+        animation-name: moveToLeft;
+        animation-fill-mode: forwards;
+ 
+      }
+
+      @keyframes moveToLeft {
+        from {right: -30%;}
+        to {right: 0;}
+      }
