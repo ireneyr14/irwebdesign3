@@ -1,0 +1,282 @@
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=- STYLES DESIGNED AND BUILT BY IRENE RIVERA -=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+
+
+
+
+
+/*****body animations*****/
+
+
+/*@keyframes colorBody{
+    0%{background-color: hsl(0, 100%, 50%);}
+    18%{background-color: hsl(70, 100%, 50%);}
+    35%{background-color: hsl(130, 100%, 50%);}
+    50%{background-color: hsl(180, 100%, 50%);}
+    65%{background-color: hsl(240, 100%, 50%);}
+    83%{background-color: hsl(310, 100%, 50%);}
+    100%{background-color: hsl(360, 100%, 50%);}
+
+}*/
+
+/*Vertical Sliding*/
+.slidingVertical {
+    text-indent: 10px;
+    font-family: "Yanone Kaffeesatz";
+    font-weight: 500;
+}
+
+.slidingVertical span {
+    animation: topToBottom 6.5s linear infinite 0s;
+    -ms-animation: topToBottom 6.5s linear infinite 0s;
+    -webkit-animation: topToBottom 6.5s linear infinite 0s;
+    color: beige;
+    opacity: 0;
+    overflow: hidden;
+    position: static;
+}
+
+.slidingVertical span:nth-child(2) {
+    animation-delay: 1.5s;
+    -ms-animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+}
+
+.slidingVertical span:nth-child(3) {
+    animation-delay: 3.0s;
+    -ms-animation-delay: 3.0s;
+    -webkit-animation-delay: 3.0s;
+}
+
+
+
+/*topToBottom Animation*/
+@-moz-keyframes topToBottom {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0;
+        -moz-transform: translateY(-40px);
+    }
+
+    10% {
+        opacity: 1;
+        -moz-transform: translateY(0px);
+    }
+
+    25% {
+        opacity: 1;
+        -moz-transform: translateY(0px);
+    }
+
+    30% {
+        opacity: 0;
+        -moz-transform: translateY(40px);
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes topToBottom {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0;
+        -webkit-transform: translateY(-40px);
+    }
+
+    10% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+
+    25% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+
+    30% {
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes topToBottom {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0;
+        -ms-transform: translateY(-40px);
+    }
+
+    10% {
+        opacity: 1;
+        -ms-transform: translateY(0px);
+    }
+
+    25% {
+        opacity: 1;
+        -ms-transform: translateY(0px);
+    }
+
+    30% {
+        opacity: 0;
+        -ms-transform: translateY(40px);
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+/*card Animation*/
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+/*falling balls Animation*/
+
+.bouncingball-1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #386157;
+    animation: bounceSlow 3.5s;
+    transform: translateY(0px);
+    animation-iteration-count: 6;
+    position: absolute;
+    margin: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 3.8s;
+}
+
+
+
+.bouncingball-2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background: #75819894;
+    opacity: 1;
+    animation: bounceSlow 4s;
+    transform: translateY(0px);
+    animation-iteration-count: 6;
+    position: absolute;
+    margin: 4vw;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+@keyframes bounceSlow {
+    from {
+        opacity: 0;
+        margin-top: 9vh;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 25vh;
+    }
+}

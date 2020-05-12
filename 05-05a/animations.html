@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>In class CSS animations</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+    <style>
+        body{
+            margin: 0;
+            overflow: hidden;
+            animation: colorBody 3s;
+        }
+
+        @keyframes colorBody{
+            0%{background-color: hsl(0, 100%, 50%);}
+            18%{background-color: hsl(70, 100%, 50%);}
+            35%{background-color: hsl(130, 100%, 50%);}
+            50%{background-color: hsl(180, 100%, 50%);}
+            65%{background-color: hsl(240, 100%, 50%);}
+            83%{background-color: hsl(310, 100%, 50%);}
+            100%{background-color: hsl(360, 100%, 50%);}
+
+        }
+
+        .circle {
+            border-radius: 50%;
+            background-color:hsl(0, 100%, 50%);
+            width:0;
+            height:0;
+            animation:circleAnimate 3s;
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            transform: translate(-50%,-50%);
+            animation-fill-mode: forwards;
+            animation-delay: 200ms;
+        }
+
+        main{
+            width: 960px;
+            margin:0;
+            opacity:0;
+            animation: popTheMain 3s;
+            animation-delay: 3s;
+            animation-fill-mode: ;
+        }
+
+        main p{
+            columns:2;
+
+        }
+
+        @keyframes popTheMain{
+            from{opacity: 0;}
+            to{opacity:1 ;}
+
+
+        }
+        @keyframes circleAnimate{
+            from  {
+                background-color:hsl(0,100%,100%);
+                width:0vw;
+                height: 0vh;
+            }
+            to {
+                background-color:hsl(0,100%,50%);
+                width: max(200vw,200vh);
+                height: max(200vw,200vh);
+            }
+        }
+
+    </style>
+    </head>
+    <body>
+        <div class="circle"></div>
+        <section>
+        <div class="strip1"></div>
+        <div class="strip2"></div>
+        <div class="strip3"></div>
+        <div class="strip4"></div>
+        </section>
+
+       <main>
+           <h1>Welcome to the world of CSS Animations</h1>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+           
+       </main>
+       <footer></footer>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

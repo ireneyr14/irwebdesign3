@@ -1,0 +1,193 @@
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=- STYLES DESIGNED AND BUILT BY IRENE RIVERA -=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+body {
+    margin: 0;
+    padding: 0;
+    /*animation: colorBody 9s;*/
+}
+
+/* Nav */
+.bg-light {
+    background-color: #7E91B6 !important;
+
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: beige;
+}
+
+li.nav-item {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 4vh;
+}
+
+
+.my-logo {
+    display: inline-block;
+    font-family: 'Yanone Kaffeesatz';
+    font-size: 3.5vh;
+    text-align: center;
+    line-height: 3.25vh;
+
+}
+
+.my-logo:hover {
+    transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -webkit-transform: rotate(25deg);
+}
+
+.logo-2 {
+    display: inline-block;
+    font-family: 'Yanone Kaffeesatz';
+    font-size: 2.5vh;
+
+}
+
+.logo-2:hover {
+    transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+}
+
+.logo-sq {
+    border: 2.35px solid white;
+    margin: 0.5vw;
+    padding: 0.75vw 1.5vw;
+}
+
+.logo-sq:hover {
+    transform: translateX(20px) -ms-transform:translateX(20px);
+    -webkit-transform: translateX(20px);
+}
+
+/*underline hover*/
+
+li>a:after {
+    content: '';
+    display: block;
+    height: 2.5px;
+    background: #d8f9a6;
+    transform: scaleX(0);
+    transition: transform .3s;
+
+}
+
+li>a:hover:after {
+    transform: scaleX(1);
+    transition: transform .3s;
+}
+
+.active {
+    color: #ff5c5c !important;
+}
+
+/*Sentence*/
+.sentence {
+    color: #222;
+    font-size: 30px;
+    text-align: left;
+}
+
+/*Body*/
+body {
+    background-color: beige;
+}
+
+/*jumbotron*/
+div.jumbotron.jumbotron-fluid.px-3 {
+    min-height: 9vh;
+    background-image: linear-gradient(#d8f9a6 10%, #a8d897 45%, #75819894 75%);
+}
+
+/*Sentence*/
+h1.display-2.px-3 {
+    color: #222;
+    font-family: 'Yanone Kaffeesatz';
+
+}
+
+/*Cards*/
+
+
+
+h1.section-title {
+    font-family: 'Yanone Kaffeesatz';
+}
+
+h4.card-title {
+    font-family: 'Yanone Kaffeesatz';
+    color: rgb(56, 97, 87);
+
+}
+
+div.card-body.text-center.mt-4 {
+    font-family: 'Raleway';
+    font-style: regular;
+
+}
+
+
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #386157;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #386157 !important;
+}
+
+.frontside .card .card-body img {
+
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+h3 {
+    color: #fff;
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
