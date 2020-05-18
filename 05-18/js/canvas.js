@@ -4,10 +4,9 @@ var ctx = canvas.getContext("2d");
 var ballX = canvas.width / 2;
 var ballY = canvas.height / 2;
 var ballColor = 'rgb(235, 104, 91)';
-var ballColorG = 'rgb(91,235,104)';
 var ballRadius = 50;
 
-var speedX = 5;
+var speedX = 4;
 var speedY = 3;
 
 var directionDown = true;
@@ -52,7 +51,22 @@ function animate() {
 
 animate();
 
-// SCORE
+
+
+canvas.addEventListener("click", function (event) {
+
+    var distX = Math.abs(ballX - event.offsetX);
+    var distY = Math.abs(ballY - event.offsetY);
+
+    if (distX < ballRadius && distY < ballRadius) {
+        console.log('Gotcha!');
+        
+
+
+    }
+
+
+})
 
 canvas.addEventListener("click", function (event) {
 
@@ -66,6 +80,7 @@ canvas.addEventListener("click", function (event) {
 
 
 })
+
 
 // BALL COLOR CHANGE GREEN
 
