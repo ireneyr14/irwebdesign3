@@ -1,0 +1,164 @@
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=- STYLES DESIGNED AND BUILT BY IRENE RIVERA -=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+/*NAV*/
+
+.sticky-top{
+    background-color:#DB5B47;
+    font-family: "Raleway";
+}
+
+.dropdown-menu.show {
+    background-color: #DB5B47;
+    
+}
+
+.dropdown-item{
+    color:beige;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #D6AC62;
+    text-decoration: none;
+    background-color: #DB5B47;
+    
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffd995;
+}
+
+
+/*JUMBOTRON*/
+
+#video-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    
+
+    
+}
+
+.jumbotron {
+    position: relative;
+  overflow: hidden;
+  
+
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+  }
+
+h1.jum-head {
+    font-family: "Raleway";
+    font-weight: bold;
+    color:white;
+}
+
+h2.featurette-heading {
+    font-family: "Raleway";
+    font-weight: bold;
+}
+
+h4.font-color {
+    font-family: "Open Sans";
+    color: white;
+}
+
+
+h4.navbar {
+    font-family: "Raleway";
+    color: white;
+
+}
+
+h5.font-color{
+    font-family: "Open Sans";
+    color: white;
+    
+}
+
+p.text-body {
+    font-family: 'Open Sans';
+    font-size: 1.25rem;
+}
+
+.header-color {
+    color: #D6AC62;
+    font-size: 2rem;
+}
+
+.row-color {
+    background-color: aqua;
+
+}
+
+/*FEATURETTE*/
+
+
+p.lead {
+    font-family: 'Open Sans';
+    font-size: 1.45rem;
+}
+
+hr.featurette-divider{
+    background-color:#D6AC62;
+}
+
+
+
+
+tr:nth-child(odd) {
+    background-color: lightskyblue;
+    font-family: "Open Sans";
+
+}
+
+tr:nth-child(even) {
+    background-color: #CED7ED;
+    font-family: "Open Sans";
+
+}
+
+th {
+    background-color: #D6AC62;
+    color: aliceblue;
+    font-family: raleway;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/*MENU STYLES*/
+
+h2.Menu-Header{
+    font-family: raleway; 
+    color:#DB5B47;
+
+}
+
+span.text-muted{
+    font-family:"Raleway"; 
+    font-size:1.5rem;
+
+}
+
+div#section1.container-fluid{
+    
+    padding-bottom: 9vh;
+
+}
