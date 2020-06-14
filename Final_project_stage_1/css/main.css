@@ -1,0 +1,317 @@
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=- STYLES DESIGNED AND BUILT BY IRENE RIVERA -=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+/* Nav */
+.bg-light {
+    background-color: #ffe373;
+    background-image: linear-gradient(#B2C6B2 10%, #FBFBFB 70%);
+    background-size: 130% 130%;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+li.nav-item {
+    font-family: 'Heebo', sans-serif;
+    font-size: 2.75vh;
+}
+
+a.nav-link {
+    font-size: 2.05rem;
+    display: inline-block;
+    position: relative;
+  
+    text-decoration: none;
+    font-family: 'DM Serif Display', serif;
+
+}
+
+
+.my-logo {
+    display: inline-block;
+    font-family: 'Heebo';
+    font-size: 3.5vh;
+    text-align: center;
+    line-height: 3.25vh;
+
+}
+
+.my-logo:hover {
+    transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -webkit-transform: rotate(25deg);
+}
+
+.logo-2 {
+    display: inline-block;
+    font-family: 'Heebo';
+    font-size: 2.5vh;
+
+}
+
+.logo-2:hover {
+    transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+}
+
+.logo-sq {
+    border: 2.35px solid white;
+    margin: 0.5vw;
+    padding: 0.75vw 1.5vw;
+}
+
+.logo-sq:hover {
+    transform: translateX(20px) -ms-transform:translateX(20px);
+    -webkit-transform: translateX(20px);
+}
+
+/*underline hover*/
+
+li>a:after {
+    content: '';
+    display: block;
+    height: 2.5px;
+    background: #FF6220;
+    transform: scaleX(0);
+    transition: transform .3s;
+
+}
+
+li>a:hover:after {
+    transform: scaleX(1);
+    transition: transform .3s;
+}
+
+.active {
+    color: #ff5c5c !important;
+}
+
+.navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    line-height: 2.25;
+    font-size: 9rem;
+    /* height: auto; */
+    z-index: 40;
+    -webkit-box-align: center;
+    /* display: flex; */
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+
+}
+
+.navbar-toggler span {
+    display: block;
+    background-color: rgb(27, 27, 27);
+    height: 3px;
+    width: 25px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    position: relative;
+    right: 0;
+    opacity: 1;
+}
+
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+    -webkit-transition: transform .35s ease-in-out;
+    -moz-transition: transform .35s ease-in-out;
+    -o-transition: transform .35s ease-in-out;
+    transition: transform .35s ease-in-out;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    position: absolute;
+    right: 29px;
+    top: 23px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    opacity: 0.9;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    height: 4vh;
+    visibility: hidden;
+    background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    position: absolute;
+    right: 29px;
+    top: 23px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    opacity: 0.9;
+}
+
+/* JUMBOTRON*/
+
+
+.jumbotron {
+    background-size: cover;
+    background-position: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+
+h1.jum-head {
+    font-family: "Heebo";
+    font-weight: bold;
+    color: black;
+    font-size: 3.75rem;
+    font-kerning: auto;
+}
+
+/*button*/
+
+.content {
+    padding: 50px;
+    text-align: center;
+}
+
+a.btn-semi {
+    font-size: 2.75rem;
+    display: inline-block;
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    font-kerning: auto;
+
+
+}
+
+.btn-semi:hover {
+    color: #ff4c00;
+    transition: color 0.2s 0.2s;
+}
+
+.btn-semi:after {
+    content: "";
+    width: 0;
+    height: 7px;
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    background: #FF6220;
+    transition: width 0.2s;
+}
+
+.btn-semi:before {
+    content: "";
+    width: 0;
+    height: 7px;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    background: #FF6220;
+    width: 25%;
+    transition: width .2s .2s;
+
+}
+
+.btn-semi:hover:before {
+    width: 100%;
+    transition: width 0.2s ease-in-out;
+}
+
+.btn-semi:hover:after {
+    width: 100%;
+    transition: width 0.2s 0.2s ease-in-out;
+}
+
+
+
+
+/*--Featurette Style--*/
+
+
+h2.featurette-heading {
+    font-family: 'DM Serif Display', serif;
+    font-weight: bold;
+}
+
+span.text-muted{
+    font-family: 'DM Serif Display', serif;
+    font-style: italic; 
+    color:#9A9898!important; 
+}
+
+h4.navbar {
+    font-family: 'DM Serif Display', serif;
+    color: black;
+
+}
+
+p.lead{
+    font-family: 'Heebo';
+    font-weight: 400;
+
+}
+
+/*--Featurette IMG Hover--*/
+.img-hover img {
+    -webkit-transition: all .3s ease; /* Safari and Chrome */
+  	-moz-transition: all .3s ease; /* Firefox */
+  	-o-transition: all .3s ease; /* IE 9 */
+  	-ms-transition: all .3s ease; /* Opera */
+  	transition: all .3s ease;
+  	position:relative;
+}
+.img-hover img:hover {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(1.20); /* Safari and Chrome */
+    -moz-transform:scale(1.20); /* Firefox */
+    -ms-transform:scale(1.20); /* IE 9 */
+    -o-transform:translatZ(0) scale(1.20); /* Opera */
+    transform:translatZ(0) scale(1.20);
+}
+  
+.img-hover:hover:after {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:2;
+}
+  
+.grayscale {
+  -webkit-filter: brightness(1.10) grayscale(100%) contrast(90%);
+  -moz-filter: brightness(1.10) grayscale(100%) contrast(90%);
+  filter: brightness(1.10) grayscale(100%); 
+}
