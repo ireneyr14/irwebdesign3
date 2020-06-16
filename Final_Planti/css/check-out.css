@@ -6,70 +6,37 @@
 
 /* Nav */
 .bg-light {
-    background-color: #ffe373;
+   
     background-image: linear-gradient(#B2C6B2 10%, #FBFBFB 70%);
     background-size: 130% 130%;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.05)
 
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: black;
-}
 
 li.nav-item {
     font-family: 'Heebo', sans-serif;
-    font-size: 2.75vh;
+    font-size: 2.75rem;
 }
 
 a.nav-link {
-    font-size: 2.05rem;
+    font-size: 1.75rem;
     display: inline-block;
     position: relative;
-  
     text-decoration: none;
     font-family: 'DM Serif Display', serif;
+    color: black;
 
 }
 
-
-.my-logo {
-    display: inline-block;
-    font-family: 'Heebo';
-    font-size: 3.5vh;
-    text-align: center;
-    line-height: 3.25vh;
-
+a.shopping-cart{
+font-size: 1.75rem;
+color: black;
+text-decoration: none;
+font-family: 'DM Serif Display', serif;
+font-size: 1.75rem;
 }
 
-.my-logo:hover {
-    transform: rotate(25deg);
-    -ms-transform: rotate(25deg);
-    -webkit-transform: rotate(25deg);
-}
-
-.logo-2 {
-    display: inline-block;
-    font-family: 'Heebo';
-    font-size: 2.5vh;
-
-}
-
-.logo-2:hover {
-    transform: translateY(30px);
-    -ms-transform: translateY(30px);
-    -webkit-transform: translateY(30px);
-}
-
-.logo-sq {
-    border: 2.35px solid white;
-    margin: 0.5vw;
-    padding: 0.75vw 1.5vw;
-}
-
-.logo-sq:hover {
-    transform: translateX(20px) -ms-transform:translateX(20px);
-    -webkit-transform: translateX(20px);
-}
 
 /*underline hover*/
 
@@ -88,9 +55,7 @@ li>a:hover:after {
     transition: transform .3s;
 }
 
-.active {
-    color: #ff5c5c !important;
-}
+
 
 .navbar-collapse {
     -ms-flex-preferred-size: 100%;
@@ -176,7 +141,7 @@ li>a:hover:after {
 .jumbotron {
     background-size: cover;
     background-position: center;
-    padding-top: 20%;
+    padding-top: 30%;
     padding-bottom: 20%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -188,7 +153,7 @@ li>a:hover:after {
 
 
 h1.jum-head {
-    font-family: "Heebo";
+    font-family: 'DM Serif Display', serif;
     font-weight: bold;
     color: black;
     font-size: 3.75rem;
@@ -254,64 +219,137 @@ a.btn-semi {
     transition: width 0.2s 0.2s ease-in-out;
 }
 
+/*footer*/
 
-
-
-/*--Featurette Style--*/
-
-
-h2.featurette-heading {
-    font-family: 'DM Serif Display', serif;
-    font-weight: bold;
+footer.page-footer {
+    
+    background: linear-gradient(0deg, rgba(178,198,178,1) 0%, rgba(251,251,251,1) 100%);
+    background-size: 130% 130%;
+    padding-top: 5vh;
 }
 
-span.text-muted{
-    font-family: 'DM Serif Display', serif;
-    font-style: italic; 
-    color:#9A9898!important; 
-}
-
-h4.navbar {
-    font-family: 'DM Serif Display', serif;
-    color: black;
-
-}
-
-p.lead{
+button.btn.btn-sm {
+    background-color: #FF6220;
     font-family: 'Heebo';
-    font-weight: 400;
-
+    font-weight: 500;
+    color: black;
 }
 
-/*--Featurette IMG Hover--*/
-.img-hover img {
-    -webkit-transition: all .3s ease; /* Safari and Chrome */
-  	-moz-transition: all .3s ease; /* Firefox */
-  	-o-transition: all .3s ease; /* IE 9 */
-  	-ms-transition: all .3s ease; /* Opera */
-  	transition: all .3s ease;
-  	position:relative;
+h5.heading-footer {
+    font-family: 'Heebo';
+    font-weight: 700;
+    color:black;
+    text-transform: uppercase;
+    text-align: left;
 }
-.img-hover img:hover {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform:translateZ(0) scale(1.20); /* Safari and Chrome */
-    -moz-transform:scale(1.20); /* Firefox */
-    -ms-transform:scale(1.20); /* IE 9 */
-    -o-transform:translatZ(0) scale(1.20); /* Opera */
-    transform:translatZ(0) scale(1.20);
+
+p.newsletter-copy {
+    font-family: 'Heebo';
+    color: black;
+    text-align: left;
+}
+
+h5.logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5rem;
+    color:black;
+    text-align: left;
+}
+
+.footer-copyright {
+    color: black;
+}
+
+
+  
+  .my-0{
+      color:black;
+  }
+  
+  .totalamt{
+      color:black;
+      font-family: 'Heebo', sans-serif;
+  }
+  
+  .excode{
+      color:black;
+       font-family: 'Heebo', sans-serif;
+  }
+  
+  .btn{
+      font-family: 'Heebo', sans-serif;
+      font-weight: bold;
+      background-color: #FF6220;
+      color:#FCECEC;
+      font-size:1.45rem;
+      border-color: transparent;
+  }
+
+  .btn-primary:hover {
+    color: black;
+    background-color:#B2C6B2;
+    border-color: black;
+}
+
+btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: #FF6220;;
+    border-color: transparent;
+    box-shadow: 0;
 }
   
-.img-hover:hover:after {
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:2;
-}
+  .d-flex{
+      font-family: 'Heebo', sans-serif;
+  }
   
-.grayscale {
-  -webkit-filter: brightness(1.10) grayscale(100%) contrast(90%);
-  -moz-filter: brightness(1.10) grayscale(100%) contrast(90%);
-  filter: brightness(1.10) grayscale(100%); 
-}
+  .cart-title{
+     
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.35rem;
+    color:black;
+      
+  }
+
+  div.container.text-justify{
+      padding-top: 9rem;
+      padding-bottom: 5rem;
+  }
+  
+  .badge-pill{
+      background-color: #FF6220;;
+  }
+  
+  h4.mb-3{
+    font-size: 1.75rem;
+    color: black;
+    text-decoration: none;
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.75rem;
+  }
+  
+  hr.mb-4{
+      background-color:#B2C6B2;
+  }
+  
+  .col-md-6{
+       font-family: 'Heebo', sans-serif;
+      color:#352E2E;
+  }
+  
+  .custom-control-label{
+       font-family: 'Heebo', sans-serif;
+      color:#352E2E;
+  }
+  
+  .form-control{
+       font-family: 'Heebo', sans-serif;
+  }
+  
+  p.mb-1{
+      color:#AC4B4C;
+  }
+  
+  .mb-3{
+      color:#352E2E;
+       font-family: 'Heebo', sans-serif;
+  }
